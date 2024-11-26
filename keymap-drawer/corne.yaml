@@ -100,7 +100,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP NUM
   - KP PLUS
   - KP 7
   - KP 8
