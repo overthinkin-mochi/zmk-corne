@@ -63,11 +63,11 @@
             //                                                      enter
 
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp G          &kp UP_ARROW     &kp J        &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LSHFT  &kp A  &kp R      &kp S     &kp T  &kp D          &kp DOWN_ARROW   &kp H        &kp N  &kp E      &kp I    &kp O          &kp SQT
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B          &kp LEFT_ARROW   &kp K        &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp DEL
-                  &kp SPACE  &kp LGUI  &mo 1  &lt 4 SPACE    &kp RIGHT_ARROW  &lt 4 ENTER  &mo 2  &kp RALT
-                                                             &kp ENTER
+&kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp G        &kp UP_ARROW     &kp J      &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
+&kp LSHFT  &kp A  &kp R      &kp S     &kp T  &kp D        &kp DOWN_ARROW   &kp H      &kp N  &kp E      &kp I    &kp O          &kp SQT
+&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B        &kp LEFT_ARROW   &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp DEL
+                  &kp SPACE  &kp LGUI  &mo 1  &kp SPACE    &kp RIGHT_ARROW  &kp ENTER  &mo 2  &kp RALT
+                                                           &kp ENTER
             >;
 
             label = "QWERTY";
@@ -92,11 +92,11 @@
             >;
 
             label = "NUMBER";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp F23 F24>;
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "MOVE";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -113,20 +113,10 @@
             >;
 
             label = "SYMBOL";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans       &trans  &kp F1     &kp F2  &kp F3         &kp F4   &kp F5   &kp F6
-&trans  &trans  &trans  &trans        &trans  &trans       &trans  &kp F7     &kp F8  &kp F9         &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans        &trans  &trans       &trans  &trans     &trans  &trans         &trans   &trans   &trans
-                &trans  &kp LEFT_WIN  &trans  &kp SPACE    &trans  &kp ENTER  &trans  &kp RIGHT_ALT
-                                                           &trans
-            >;
-        };
-
-        layer_4 {
             display-name = "Fn";
             bindings = <
 &trans        &kp F1          &kp F2        &kp F3        &kp F4        &kp F5      &mmv MOVE_UP     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
