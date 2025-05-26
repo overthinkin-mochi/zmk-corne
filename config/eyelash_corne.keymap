@@ -67,9 +67,9 @@
         lower_layer {
             display-name = "MOTION";
             bindings = <
-&trans  &kp KP_NUMLOCK   &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                &mmv MOVE_UP                     &kp HOME    &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans  &trans
-&trans  &kp KP_ASTERISK  &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp LEFT    &kp DOWN       &kp UP     &kp RIGHT  &trans  &trans
-&trans  &kp KP_DIVIDE    &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp K_BACK  &kp K_FORWARD  &trans     &trans     &trans  &trans
+&trans  &kp KP_NUMLOCK   &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                &mmv MOVE_UP                     &kp HOME    &kp PAGE_DOWN  &kp PG_UP  &kp END  &trans  &trans
+&trans  &kp KP_ASTERISK  &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6                &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H       &kp J          &kp K      &kp L    &trans  &trans
+&trans  &kp KP_DIVIDE    &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp K_BACK  &kp K_FORWARD  &trans     &trans   &trans  &trans
                                        &kp KP_NUMBER_0  &lt 3 A          &trans                                                                          &trans      &trans         &trans
             >;
 
@@ -91,10 +91,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&studio_unlock  &trans      &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL                                &mmv MOVE_UP                     &trans  &trans  &trans  &trans   &trans      &trans
-&kp F1          &kp F2      &kp F3  &kp F4  &kp F5      &kp F6                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11     &kp F12
-&bootloader     &sys_reset  &trans  &trans  &bt BT_PRV  &bt BT_NXT      &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans   &sys_reset  &bootloader
-                                    &trans  &trans      &trans                                                                         &trans  &trans  &trans
+&studio_unlock  &trans      &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL                                &mmv MOVE_UP                     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans      &trans
+&kp F1          &kp F2      &kp F3  &kp F4  &kp F5      &kp F6                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F7    &kp F8    &kp F9  &kp F10    &kp F11     &kp F12
+&bootloader     &sys_reset  &trans  &trans  &bt BT_PRV  &bt BT_NXT      &kp C_MUTE                    &mmv MOVE_DOWN                   &trans    &trans    &trans  &trans     &sys_reset  &bootloader
+                                    &trans  &trans      &trans                                                                         &trans    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
